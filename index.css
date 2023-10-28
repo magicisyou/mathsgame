@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+  color: #dfdfdf;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right bottom, #233, #d78137);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header {
+  padding: 20px;
+}
+
+header a {
+  color: #cdcdcd;
+}
+
+button {
+  cursor: pointer;
+}
+
+#app {
+  padding: 25px;
+  background-color: #1112;
+  background-image:url('assets/background.png');
+  background-size: cover;
+  width: calc(100vw - 80px);
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.play-button {
+  background-color: #12112155;
+  width: 150px;
+  height: 55px;
+  border: solid #121121 1px;
+  border-radius: 40px;
+}
+
+.play-button:hover {
+  background-color: #12112140;
+}
+
+.message-div {
+  text-align: center;
+}
+
+#answer-div {
+  font-size: 24px;
+}
+
+.question-div {
+  font-size: 24px;
+}
+
+.score-div {
+  width: 95%;
+  text-align: right;
+}
+
+.keyboard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  float: bottom;
+}
+
+.keyboard-left,
+.keyboard-middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.keyboard-left button {
+  width: 100%;
+  height: 80px;
+}
+
+.keyboard-middle button {
+  width: calc(100% / 3);
+  height: 80px;
+}
+
+.keyboard-left {
+  width: 20%;
+}
+
+.keyboard-middle {
+  width: 60%;
+}
+
+#ok-button {
+  width: 20%;
+  height: 240px;
+}
+
+.keyboard button {
+  background: #1116;
+  border: solid #111 0.3px;
+  transition: all 0.5s;
+}
+
+.keyboard button:hover {
+  background: #2226;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 6px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  float: left;
+  animation: progress-bar-expand linear 8s 1 normal;
+}
+
+@keyframes progress-bar-expand {
+  from {
+    width: 0;
+    background: green;
+  }
+  to {
+    width: 100%;
+    background: #d00;
+  }
+}
